@@ -12,6 +12,12 @@ $ npm install gulp-cortex-html-sauce --save
 
 ```js
 var sauce = require('gulp-cortex-html-sauce);
+
+gulp.src("*.html")
+  .pipe(sauce({
+      base: './dist' // base dir of output files, if ignores, file.path will be used
+  }))
+  .pipe(gulp.dest('./dist'))
 ```
 
 ## Licence

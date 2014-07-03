@@ -1,5 +1,5 @@
 'use strict';
-var cpipe = require('cortex-pipe');
+var sauce = require('cortex-html-sauce');
 var through = require('through2');
 var PluginError = require('gulp-util').PluginError;
 var fs = require('fs');
@@ -8,7 +8,7 @@ module.exports = function(options) {
   return through.obj(function(file, enc, callback) {
     var self = this;
     if (file.isStream()) {
-      file.contents = cpipe(file.cwd, {
+      file.contents = sauce(file.cwd, {
         stream: file.contents,
         html: file.path
       });
@@ -17,7 +17,7 @@ module.exports = function(options) {
       return callback();
     }
 
-    cpipe(file.cwd, {
+    sauce(file.cwd, {
       content: String(file.contents),
       html: file.path,
       base: options.base
