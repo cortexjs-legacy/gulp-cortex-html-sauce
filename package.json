@@ -1,0 +1,38 @@
+{
+  "name": "gulp-cortex-html-sauce",
+  "version": "0.1.0",
+  "description": "gulp task for cortex-html-sauce",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint index.js test/*.js",
+    "test": "./node_modules/.bin/mocha -R spec test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cortexjs/gulp-cortex-html-sauce.git"
+  },
+  "keywords": [
+    "cortex",
+    "css",
+    "gulp",
+    "dependencies"
+  ],
+  "engines": {
+    "node": ">=0.11.0"
+  },
+  "author": "villadora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cortexjs/gulp-cortex-html-sauce/issues"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "jshint": "^2.5.1",
+    "mocha": "^1.20.1"
+  },
+  "dependencies": {
+    "cortex-html-sauce": "^0.1.0",
+    "gulp-util": "^2.2.19",
+    "underscore": "^1.6.0"
+  }
+}
