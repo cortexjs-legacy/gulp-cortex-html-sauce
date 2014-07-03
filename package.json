@@ -1,6 +1,6 @@
 {
   "name": "gulp-cortex-html-sauce",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "gulp task for cortex-html-sauce",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,7 @@
   "dependencies": {
     "cortex-html-sauce": "^0.1.0",
     "gulp-util": "^2.2.19",
+    "through2": "^0.5.1",
     "underscore": "^1.6.0"
   }
 }
